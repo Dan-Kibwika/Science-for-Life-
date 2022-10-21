@@ -1,0 +1,843 @@
+/* 
+/* <!--====================================================================================================================================  -->
+<!--====================================================================================================================================  -->
+<!--====================================================================================================================================  -->
+<!--====================================================================================================================================  -->
+
+
+<!--====================================================================================================================================  -->
+<!--======================                                                              ==============================================  -->
+<!--======================                           MY STYLESHEET                      ================================================  -->
+<!--======================                               STARTS                         ==============================================  -->
+<!--====================================================================================================================================  --> */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+    margin:0;padding:0;box-sizing:border-box;
+    outline:none;border:none;text-decoration:none;
+    text-transform: capitalize;
+
+}
+
+
+
+:root{
+
+--main-color:#2983f0;
+--black:#222;
+--white:#fff;
+--light-black:#777;
+--light-white:#fff9;
+--dark-bg:rgba(0,0,0,.7);
+--light-bg:#eee;
+--border:1rem solid var(--black);
+--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+--text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+
+
+}
+
+html{
+
+
+    font-size: 32.5%;
+    overflow-x: hidden;
+
+}
+
+html::-webkit-scrollbar{
+width :1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: var(--main-color);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================================================================================================== */
+/* HEADER- STARTS HERE */
+/* ===================================================================================================================== */
+
+
+section{
+
+padding: 5rem 5%;
+
+}
+
+
+
+@keyframes fadeIn {
+
+0%{
+
+transform: scale(0);
+opacity:0 ;
+
+}
+
+}
+
+
+
+
+
+
+
+
+.header{
+
+
+    position: sticky;
+    top:0;left:0;right:0;
+    z-index : 1000;
+    background-color : var(--white);
+    display: flex;
+    padding-top:2rem;
+padding-bottom:2rem;
+box-shadow: var(--box-shadow);
+align-items: center;
+justify-content: space-between;
+
+
+}
+
+.header .logo{
+
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+.header .nvaBar a{
+
+
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--black);
+
+}
+
+.header .nvaBar a:hover{
+
+    color: rgba(30, 124, 182, 0.149);
+
+}
+
+#menu-btn{
+
+  font: 2.5rem;
+  cursor: pointer;
+  color:var(--black);
+  display:inline-block;
+}
+
+
+
+
+/* media quiery */
+
+@media (max-width:1200px){
+section{
+
+padding: 3rem 5%;
+
+    }
+
+ .home .slide .content h3{
+
+
+font-size: 10vw;
+
+    }
+
+    
+
+}
+
+
+@media (max-width:991px){
+
+    html{
+        font-size : 55%;
+    }
+    section{
+    
+    padding: 3rem 2%;
+    
+        }
+
+        
+    }
+    
+
+    @media (max-width:768px){
+        .header .nvaBar{
+position:absolute;
+top: 99%;left: 0;right: 0;
+background-color: var(--white);
+border-top:var(--border);
+padding:2rem;
+transition: 2rem linear;
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        }
+
+
+        .header .nvaBar.active{
+
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+        }
+
+
+        .header .nvaBar a{
+
+display: block;
+text-align: center;
+margin: 2rem;
+
+        }
+
+
+
+        #menu-btn{
+
+         display: inline-block;
+         transition: .2s linear;
+
+         }
+
+         #menu-btn.fa-times{
+
+         width:100%;
+
+
+         }
+
+
+         
+    }
+
+
+    @media (max-width:450px){
+
+        html{
+    
+            font-size : 50%;
+        }
+
+
+        .headeing-title{
+
+            font-size: 3.5rem ;
+        }
+
+
+      
+       
+        }
+
+/* ===================================================================================================================== */
+/* HEADER- ENDS HERE */
+/* ===================================================================================================================== */
+
+
+
+        
+/* ===================================================================================================================== */
+/* FOOTER-STYLE-STARTS HERE */
+/* ===================================================================================================================== */
+
+.footer{
+
+    /* background-color: rgb(32, 79, 130); */
+    background-image: url(../pictures/mountains-cliff-peak-doi-inthanon-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+   
+    
+}
+
+.footer .box-container {
+
+display: grid;
+grid-template-columns : repeat(auto-fit, minmax(25rem, 1fr));
+gap: 3rem;
+
+}
+
+
+
+.footer .box-container .box h3{
+
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.footer .box-container .box a{
+
+    color: var(--light-white );
+    font-size: 1.5rem; 
+    padding-bottom: 1rem;
+    display: block;
+
+}
+
+.footer .box-container .box a i{
+
+    color: var(--main-color);
+    font-size: 1.5rem; 
+    padding-right: 1.5rem;
+    transition: 0.2s linear ;
+
+
+}
+
+
+.footer .box-container .box a:hover i{
+
+    color: var(--main-color);
+   
+    padding-right: 2rem;
+
+
+}
+
+
+.footer .credit{
+
+
+text-align: center;
+padding-top: 3rem;
+margin-top:3rem ;
+border-top: .1rem solid var(--light-white);
+font-size :2rem;
+color: var(--light-white);
+
+
+}
+.footer .credit span{
+
+    color: var(--main-color);
+}
+
+
+
+
+/* ===================================================================================================================== */
+/* FOOTER-STYLE-ENDS HERE */
+/* ===================================================================================================================== */
+
+
+
+
+
+
+/* ===================================================================================================================== */
+/* service-STYLE-startS HERE */
+/* ===================================================================================================================== */
+
+/* .box-aux{
+
+background-image: url(../pictures/bkg-blu.jpg);
+
+background-size: cover;
+
+
+} */
+
+
+.service .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap:1.5rem;
+    cursor: pointer;
+
+
+
+}
+
+
+.service .box-container .box{
+
+    padding:3rem 2rem;
+    text-align: center;
+    background:var(--main-color);
+
+
+
+}
+
+
+.service .box-container .box:hover{
+
+
+    background:#eee;
+
+
+}
+
+
+
+
+.service .box-container .box img{
+
+
+ height: 18rem;
+
+
+}
+
+
+.service .box-container .box h3{
+
+color:var(--light-white);
+font-size: 1.7rem;
+padding-top: 1.2rem;
+   
+   
+   }
+
+
+   .headeing-title{
+
+text-align: center;
+margin-bottom: 3rem ;
+font-size: 6rem;
+text-transform: uppercase;
+color:var(--black);
+
+
+   }
+
+
+/* ===================================================================================================================== */
+/* service-STYLE-ENDS HERE */
+/* ===================================================================================================================== */
+
+
+
+/*--==================================================================================================================================-->*/
+/*-- home section STARTS HERE  -->*/
+/*--==================================================================================================================================-->*/
+
+
+.home{
+
+
+padding: 0%;
+
+}
+
+.home .slide{
+
+text-align: center;
+padding:2rem;
+display: flex;
+align-items:center;
+justify-content: center;
+background-size: cover !important;
+background-position: center !important;
+min-height: 60rem;
+
+
+
+}
+
+.home .slide .content{
+
+width: 85rem;
+display: none;
+
+}
+
+/* .home .swiper-slider-active .content{ */
+
+.home .swiper-slide-active .content{
+display: inline-block;
+
+}
+
+
+
+
+.home .slide .content span{
+
+    display: block;
+    font-size: 2.2rem;
+    color: var(--light-white);
+    padding-bottom: 1rem;
+    animation:fadeIn .4s linear backwards .2s;
+}
+
+
+.home .slide .content h3{
+
+
+    font-size: 3vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height:1 ;
+    text-shadow:var(--text-shadow) ;
+    padding:1rem 0 ;
+    animation:fadeIn .4s linear backwards .4s;
+
+}
+
+.home .slide .content .btn{
+
+    animation:fadeIn .4s linear backwards .6s;
+}
+
+
+
+.btn{
+
+display: inline-block;
+background-image:url(../pictures/mountains-cliff-peak-doi-inthanon-wallpaper-preview.jpg) ;
+margin-top: 1rem;
+color: var(--white);
+font-size: 1.7rem;
+padding:1rem 3rem;
+cursor:pointer;
+animation:fadeIn .4s linear backwards .6 s;
+
+}
+
+.btn:hover{
+
+background: var(--main-color);
+
+
+}
+
+
+
+.home .swiper-button-next,
+.home .swiper-button-prev{
+
+top: inherit;
+left: inherit;
+bottom: 0;
+right: 0;
+height: 7rem;
+width: 7rem;
+background-color: var(--white);
+color: var(--black);
+
+}
+
+
+
+
+.home .swiper-button-next,
+.home .swiper-button-prev{
+
+background: var(--light-bg);
+color: var(--black);
+transition: 1s;
+
+}
+
+.home .swiper-button-prev{
+
+right: 7rem;
+
+
+}
+
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+
+background: var(--main-color);
+color: var(--white);
+
+}
+
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after{
+
+font-size: 2rem;
+}
+
+/*--==================================================================================================================================-->*/
+/*-- home section STARTS HERE  -->*/
+/*--==================================================================================================================================-->*/
+
+
+
+
+/* 
+
+<!--==================================================================================================================================-->
+<!-- ABOUT US  STARTS HERE  ///////////////////-->
+<!--==================================================================================================================================--> */
+
+
+
+.home-about{
+
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.home-about .image{
+
+    flex: 1 1 41rem;
+    
+}
+
+.home-about .image img {
+    width:100%;
+    transition: 2s;
+    
+}
+
+
+.home-about .image img:hover{
+
+    width:90%;
+    animation:fadeIn .4s linear backwards .6 s;
+   
+}
+
+.home-about .content{
+
+
+    flex: 1 1 41rem;
+    padding: 6rem;
+    background: var(--light-bg);
+
+}
+
+
+
+.home-about .content h3{
+
+font-size: 3rem;
+color: #222;
+
+
+}
+
+
+.home-about .content p{
+
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2rem;
+    animation:fadeIn .4s linear backwards .6 s;
+}
+
+/* 
+
+<!--==================================================================================================================================-->
+<!-- ABOUT US  ENDS HERE  ///////////////////-->
+<!--==================================================================================================================================--> */
+
+
+
+
+
+/* 
+<!-- ====================================================================================================== ====================================================-->
+<!-- ABOUT US STARTS HERE   -->
+<!-- ====================================================================================================== ====================================================--> */
+
+
+.heading{
+
+    background: url(../pictures/Screenshot.png) no-repeat;
+    background-size: cover !important;
+    background-position: center!important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+} 
+
+
+.heading h1{
+
+font-size: 10rem;
+text-transform: uppercase;
+color: var(--white);
+text-shadow: var(--text-shadow);
+
+}
+
+.about{
+
+
+    display: flex;
+    align-items: center;
+   flex-wrap: wrap;
+   gap: 4rem;
+
+
+}
+
+.about .image{
+
+flex: 1 1 41rem;
+
+}
+
+
+.about .image img{
+
+    width: 100%;
+}
+
+.about .content{
+
+
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+
+.about .content h3{
+
+font-size: 4rem;
+color: var(--black);
+
+
+}
+
+
+
+.about .content p{
+
+    font-size: 2rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+    
+    
+    }
+
+
+    .about .content .icon-container{
+
+     margin-top: 2rem;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     align-items: flex-end;
+
+    }
+    
+    .about .content .icon-container .icon{
+
+background: var(--light-bg);
+padding: 2rem;
+flex: 1 1 16rem;
+
+ 
+    }
+
+
+    .about .content .icon-container .icon i{
+
+
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        color:var(--main-color);
+
+
+    }
+
+
+    .about .content .icon-container .icon span{
+
+
+font-size: 2rem;
+color:  var(--light-black);
+display: block;
+
+
+    }
+
+
+/* 
+<!-- ====================================================================================================== ====================================================-->
+<!-- ABOUT US ENDS HERE   -->
+<!-- ====================================================================================================== ====================================================-->
+ */
+
+
+
+
+
+ /* STUFF ADMIN STARTS HERE */
+
+
+
+
+ 
+
+ /* STUFF ADMIN ENDS HERE  */
+
+
+
+
+
+
+
+
+/* <!--====================================================================================================================================  -->
+<!--======================                                                              ==============================================  -->
+<!--======================                           MY STYLESHEET                      ================================================  -->
+<!--======================                               ENDS                           ==============================================  -->
+<!--====================================================================================================================================  -->
+
+
+<!--====================================================================================================================================  -->
+<!--====================================================================================================================================  -->
+<!--====================================================================================================================================  -->
+<!--====================================================================================================================================  --> */
+
+
+
+
+
+
+
+ 
